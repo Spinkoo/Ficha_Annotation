@@ -128,11 +128,19 @@ if __name__ == '__main__':
 	path = '6_classes2.json'
 	data = json.load(open(path))
 
+
+	# to exchange labels
 	#data = interchange_labels(data, ( 'Bulky', 'Garbage Bag' ))
+
+	#to fuse classes together into one class
 	'''for r in rem :
 		data = fusion_classes(data,'Recycle Waste', r)
 	'''
+
+	# to save the changed json file
+	#output_path = path
 	#save_json(data, '6_classes2.json')
 
 
+	#fix image paths for training in different enviorements
 	fix_name(data, path)
