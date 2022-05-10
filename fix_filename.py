@@ -12,7 +12,7 @@ def fix_name(data, output_path = 'fixed_data.json'):
 	l = []
 	for d in data['images'] :
 		fname = d['file_name']
-		fname = '/content/drive/MyDrive/j/data/'+fname.split('/')[-1]
+		fname = '/home/ficha/data/'+fname.split('/')[-1]
 		print(fname)
 		d['file_name'] = fname
 
@@ -125,7 +125,7 @@ if __name__ == '__main__':
 
 	rem = ['Recycle waste']
 
-	path = '6_classes2.json'
+	path = 'dataset.json'
 	data = json.load(open(path))
 
 
